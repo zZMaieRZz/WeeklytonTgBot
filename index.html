@@ -57,7 +57,7 @@
 
    tg.expand(); //расширяем на все окно
    tg.MainButton.show().setText('CLOSE WEBAPP').onClick(function(){ webviewClose(); });
-   tg.BackButton.show().setText('BACK').onClick(function(){ webviewClose(); });
+   tg.BackButton.show().onClick(function(){ webviewClose(); });
 
    function webviewClose() {
       tg.close();
