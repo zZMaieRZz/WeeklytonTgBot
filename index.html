@@ -56,8 +56,8 @@
    const initDataUnsafe = tg.initDataUnsafe || {};
 
    tg.expand(); //расширяем на все окно
-   tg.MainButton.show().setText('CLOSE WEBAPP').onClick(function(){ webviewClose(); });
-   tg.BackButton.show().onClick(function(){ webviewClose(); });
+   tg.MainButton.show().setText('CLOSE WEBAPP').onClick(() => { webviewClose(); });
+   tg.BackButton.show().onClick(() => { webviewClose(); });
 
    let usercard = document.getElementById("usercard"); //получаем блок usercard
 
